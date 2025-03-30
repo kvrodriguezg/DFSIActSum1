@@ -40,7 +40,7 @@ public class EnvioController {
 
     // Endpoint que retorna la lista de todos los envios registrados
     @GetMapping("/envios")
-    public List<Envio> getUsuarios() {
+    public List<Envio> getEnvios() {
         return envios;
     }
 
