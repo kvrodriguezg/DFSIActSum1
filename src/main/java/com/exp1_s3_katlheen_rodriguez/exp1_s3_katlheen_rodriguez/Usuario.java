@@ -9,7 +9,7 @@ class Usuario {
     private String email;
     private String telefono;
     private String direccion;
-    private Map<Integer, Map<String, String>> mascotas; //Permite almacenar varias mascontas: ID de mascota {nombre, tipo, raza}
+    private Map<Integer, Map<String, String>> mascotas; //Mapa para almacenar varias mascontas: ID de mascota {nombre, tipo, raza}
 
     //Constructor para crear nuevo objeto de Usuario
     public Usuario(Long id, String nombre, String email, String rut, String telefono, String direccion, Map<Integer, Map<String, String>> mascotas) {
