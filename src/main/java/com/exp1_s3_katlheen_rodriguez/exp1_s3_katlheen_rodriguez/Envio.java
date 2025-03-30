@@ -1,7 +1,7 @@
 package com.exp1_s3_katlheen_rodriguez.exp1_s3_katlheen_rodriguez;
 import java.time.LocalDate;
 
-//Clase Envio para aplicacion de seguimiento de envios
+//Clase Envio 
 public class Envio {
     private Long id;
     private String origen;
