@@ -2,7 +2,7 @@ package com.exp1_s3_katlheen_rodriguez.exp1_s3_katlheen_rodriguez;
 import java.util.Map;
 
 //Clase Usuario para aplicación de viaje de mascotas
-class Usuario {
+public class Usuario {
     private Long id;
     private String nombre;
     private String rut;
