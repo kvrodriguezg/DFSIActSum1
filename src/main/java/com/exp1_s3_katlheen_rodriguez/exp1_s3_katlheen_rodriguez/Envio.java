@@ -1,18 +1,18 @@
 package com.exp1_s3_katlheen_rodriguez.exp1_s3_katlheen_rodriguez;
-import java.sql.Date;
+import java.time.LocalDate;
 
 //Clase Envio para aplicacion de seguimiento de envios
 public class Envio {
     private Long id;
     private String origen;
     private String destino;
-    private Date fechaEnvio;
+    private LocalDate fechaEnvio;
     private String estado;   
     private String ubicacionActual;
-    private Date fechaEstimadaEntrega; 
+    private LocalDate fechaEstimadaEntrega; 
 
     // Constructor para crear un nuevo objeto de Envio
-    public Envio(Long id, String origen, String destino, Date fechaEnvio, String estado, String ubicacionActual, Date fechaEstimadaEntrega) {
+    public Envio(Long id, String origen, String destino, LocalDate fechaEnvio, String estado, String ubicacionActual, LocalDate fechaEstimadaEntrega) {
         this.id = id;
         this.origen = origen;
         this.destino = destino;
@@ -32,8 +32,8 @@ public class Envio {
     public String getDestino() { return destino; }
     public void setDestino(String destino) { this.destino = destino; }
 
-    public Date getFechaEnvio() { return fechaEnvio; }
-    public void setFechaEnvio(Date fechaEnvio) { this.fechaEnvio = fechaEnvio; }
+    public LocalDate getFechaEnvio() { return fechaEnvio; }
+    public void setFechaEnvio(LocalDate fechaEnvio) { this.fechaEnvio = fechaEnvio; }
 
     public String getEstado() { return estado; }
     public void setEstado(String estado) { this.estado = estado; }
@@ -41,6 +41,6 @@ public class Envio {
     public String getUbicacionActual() { return ubicacionActual; }
     public void setUbicacionActual(String ubicacionActual) { this.ubicacionActual = ubicacionActual; }
 
-    public Date getFechaEstimadaEntrega() { return fechaEstimadaEntrega; } // Getter para fecha estimada de entrega
-    public void setFechaEstimadaEntrega(Date fechaEstimadaEntrega) { this.fechaEstimadaEntrega = fechaEstimadaEntrega; } // Setter para fecha estimada de entrega
+    public LocalDate getFechaEstimadaEntrega() { return fechaEstimadaEntrega; } // Getter para fecha estimada de entrega
+    public void setFechaEstimadaEntrega(LocalDate fechaEstimadaEntrega) { this.fechaEstimadaEntrega = fechaEstimadaEntrega; } // Setter para fecha estimada de entrega
 }
