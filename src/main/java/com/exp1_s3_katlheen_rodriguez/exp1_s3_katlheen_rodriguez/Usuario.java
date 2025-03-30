@@ -6,17 +6,19 @@ class Usuario {
     private Long id;
     private String nombre;
     private String rut;
+    private String rol;
     private String email;
     private String telefono;
     private String direccion;
     private Map<Integer, Map<String, String>> mascotas; //Mapa para almacenar varias mascontas: ID de mascota {nombre, tipo, raza}
 
     //Constructor para crear nuevo objeto de Usuario
-    public Usuario(Long id, String nombre, String email, String rut, String telefono, String direccion, Map<Integer, Map<String, String>> mascotas) {
+    public Usuario(Long id, String nombre, String email, String rut, String rol, String telefono, String direccion, Map<Integer, Map<String, String>> mascotas) {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
         this.rut = rut;
+        this.rol = rol;
         this.telefono = telefono;
         this.direccion = direccion;
         this.mascotas = mascotas;
@@ -34,7 +36,10 @@ class Usuario {
     
     public String getRut() { return rut; }
     public void setRut(String rut) { this.rut = rut; }
-    
+
+    public String getRol() { return rol; }
+    public void setRol(String rol) { this.rol = rol; }
+
     public String getTelefono() { return telefono; }
     public void setTelefono(String telefono) { this.telefono = telefono; }
     
